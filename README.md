@@ -1,4 +1,4 @@
-<img width="1047" height="1008" alt="image_6232a972" src="https://github.com/user-attachments/assets/6723f55d-30f7-446c-b182-84f6decb107f" />CryptoVerse is a modern, single-page cryptocurrency market tracking platform designed to let users explore live prices and market data for major digital assets.
+CryptoVerse is a modern, single-page cryptocurrency market tracking platform designed to let users explore live prices and market data for major digital assets.
 💻 Key Web Features & Implementation
 Live Price Data & Performance Tracker:
 

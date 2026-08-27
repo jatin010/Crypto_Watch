@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoVerse — Buy & Sell Crypto</title>
-    <meta name="description" content="Track live Bitcoin, Ethereum and Dogecoin prices in INR. Discover, compare and explore cryptocurrencies with CryptoVerse.">
+    <title>CryptoVerse — Buy &amp; Sell Crypto</title>
+    <meta name="description" content="Track live Bitcoin, Ethereum and Dogecoin prices. Discover, compare and explore cryptocurrencies with CryptoVerse.">
     <link rel="icon" type="image/png" href="logo.png">
-    <!-- External Style Sheet -->
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
 
     <header class="navbar">
         <nav>
-            <a href="#" class="bitcoin.png">
+            <a href="#" class="brand">
                 <img src="logo.png" alt="CryptoVerse logo" class="logo">
                 <span>CryptoVerse</span>
             </a>
@@ -26,7 +26,8 @@
             </ul>
 
             <div class="nav-right">
-                <a href="#" class="btn btn-outline">IND</a>
+                <!-- Currency Toggle Button -->
+                <button id="currencyBtn" class="btn btn-outline">INR (₹)</button>
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
                     <span></span><span></span><span></span>
                 </button>
@@ -36,8 +37,12 @@
 
     <main class="hero">
         <div class="content">
+            <div class="live-status">
+                <span class="live-dot"></span>
+                <span>LIVE MARKET DATA</span>
+            </div>
             <h1>BUY &amp; <br>SELL <span>Crypto</span></h1>
-            <p>Discover the world of cryptocurrencies with our comprehensive and user-friendly crypto website.</p>
+            <p>Discover the world of cryptocurrencies with real-time tracking and intuitive market insights.</p>
             <a href="https://www.coingecko.com/" target="_blank" rel="noopener" class="btn btn-solid">Explore More</a>
         </div>
 
@@ -47,32 +52,41 @@
                     <img src="bitcoin.png" alt="Bitcoin">
                 </a>
                 <div>
-                    <h3>₹<span id="bitcoin">Loading…</span></h3>
-                    <p>Bitcoin</p>
+                    <h3><span class="currency-symbol">₹</span><span id="bitcoin">Loading…</span></h3>
+                    <div class="coin-meta">
+                        <p>Bitcoin</p>
+                        <span id="bitcoin-change" class="change-badge">--</span>
+                    </div>
                 </div>
             </li>
+
             <li class="coin">
                 <a href="https://www.coingecko.com/en/coins/ethereum" target="_blank" rel="noopener">
                     <img src="ethereum.png" alt="Ethereum">
                 </a>
                 <div>
-                    <h3>₹<span id="ethereum">Loading…</span></h3>
-                    <p>Ethereum</p>
+                    <h3><span class="currency-symbol">₹</span><span id="ethereum">Loading…</span></h3>
+                    <div class="coin-meta">
+                        <p>Ethereum</p>
+                        <span id="ethereum-change" class="change-badge">--</span>
+                    </div>
                 </div>
             </li>
+
             <li class="coin">
                 <a href="https://www.coingecko.com/en/coins/dogecoin" target="_blank" rel="noopener">
                     <img src="dogecoin.png" alt="Dogecoin">
                 </a>
                 <div>
-                    <h3>₹<span id="dogecoin">Loading…</span></h3>
-                    <p>Dogecoin</p>
+                    <h3><span class="currency-symbol">₹</span><span id="dogecoin">Loading…</span></h3>
+                    <div class="coin-meta">
+                        <p>Dogecoin</p>
+                        <span id="dogecoin-change" class="change-badge">--</span>
+                    </div>
                 </div>
             </li>
         </ul>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
 </body>
 </html>

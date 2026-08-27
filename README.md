@@ -10,3 +10,29 @@ Responsive Glassmorphism UI: Built with modern CSS custom properties using an el
 
 Fluid Layout & Brand Elements: Equipped with full navigation toggle functionality for optimized performance on smartphone screens.
 <img width="1047" height="1008" alt="image_6232a972" src="https://github.com/user-attachments/assets/012cd9e0-0742-45cb-86b0-278c46341556" />
+
+[ USER INTERFACE (HTML5/CSS3) ]
+       │
+       ├──► Navbar (Navigation & Active Currency Selector Toggle)
+       │
+       └──► Hero Content Banner (Visual Branding & Action Trigger)
+               │
+               └──► Coin Grid Cards (Live Crypto Metrics Display Nodes)
+                       │
+                       ├── Bitcoin  (₹/$ Amount | 24h Trend Indicator)
+                       ├── Ethereum (₹/$ Amount | 24h Trend Indicator)
+                       └── Dogecoin (₹/$ Amount | 24h Trend Indicator)
+       ▲
+       │ Updates DOM every 30s
+       │
+[ LOGIC ENGINE (Vanilla JavaScript Ecosystem) ]
+       │
+       ├──► state.currentCurrency ('inr' ◄──► 'usd')
+       │
+       └──► fetchLivePrices() Async Controller
+               │
+               └──► REST API Request Pipeline
+                       │
+                       ▼
+[ EXTERNAL DATA INFRASTRUCTURE ]
+       └──► CoinGecko Simple Price API Endpoints
